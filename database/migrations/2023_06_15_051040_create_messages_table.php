@@ -7,7 +7,7 @@ use App\Models\Message;
 
 return new class extends Migration
 {
-    /**
+    /**git
      * Run the migrations.
      */
     public function up(): void

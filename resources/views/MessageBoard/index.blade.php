@@ -7,15 +7,6 @@
 </head>
 <body>
 <h2>伝言の一覧</h2>
-<!-- 
-<div>
-    <form action="/MessageBoard/index" method="GET">
-    <input type="text" name="keyword" value="{{request('keyword')}}">
-    <input type="submit" name="search" value="検索">
-   
-    @csrf
-    </form>
-</div> -->
 
 <!--検索参考箇所  -->
 <div>

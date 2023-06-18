@@ -51,19 +51,19 @@ public function confirm(Request $request){
 }
 
 public function index(Request $request) {
-    $messages = Message::all();
+ 
+    $keyword = $request->input('keyword');
+
+    $query = Message::query();
    
-    return view('MessageBoard.index', compact('messages'));
+    // return view('MessageBoard.index', compact('messages'));
+
+    //   if($request->has('search')){
 
 
-
-      if($request->has('search')){
-
-
-        $keyword = $request->keyword;
 
         if(!empty($keyword)) {
-        // $keyword = $request->input('keyword');
+      
         
 
         // $query = Message::query();
@@ -82,7 +82,7 @@ public function index(Request $request) {
         return view('MessageBoard.index', compact('posts', 'keyword'));
     }
 
-}
+
 
 
 

@@ -13,45 +13,40 @@
     <input type="hidden" name="contact" value="{{$request->contact}}">
     <input type="hidden" name="comment" value="{{$request->comment}}">
 
-<p>伝言内容確認</p>
+<h2>伝言内容確認</h2>
 <ul>
     <li>
-        名前：
-        <p>{{$request->name}}</p>
+        名前：<p>{{$request->name}}</p>
         
     </li>
-</ul>
-<ul>
+
+
     <li>
         あなたの連絡先：
         <p>{{$request->email}}</p>
       
     </li>
-</ul>
-<ul>
+
+
     <li>
-        伝言を宛先名：
+        伝言の宛先名：
         <p>{{$request->to}}</p>
       
     </li>
-</ul>
-<ul>
+
     <li>
         伝言の宛先（メールアドレス）：
         <p>{{$request->contact}}</p>
        
     </li>
-</ul>
-<ul>
+
     <li>
         要件・詳細：
         <p>{{$request->comment}}</p>
-        @if ($errors->has('coomment'))
-            <p class="error">*{{ $errors->first('comment') }}</p>
-        @endif
+       
     </li>
 </ul>
-<di>
+<div>
 <button class="btn btn-primary" type="submit" name="back">
         <i class="fa-solid fa-caret-left"></i>戻る
     </button>
